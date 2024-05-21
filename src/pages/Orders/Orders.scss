@@ -1,0 +1,78 @@
+.orders{
+    
+    padding: 20px 50px;
+    .list-tab{
+        background: #fff;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: unset;
+
+        span{
+            padding: 16px 0;
+            color: #000;
+            width: calc(100% / 5);
+            border-bottom: 2px solid rgba(0,0,0,.09);
+            cursor: pointer;            
+        }
+        .active{
+            color: #ee2724;
+            border-bottom: solid 2px #ee2724;
+        }
+    }
+
+    .list-order{
+        .tableCell{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            .status{
+                padding: 5px;
+                border-radius: 5px;
+
+                &.cho-xac-nhan{
+                    background-color: goldenrod;
+                }
+                &.chuan-bi-hang{
+                    background-color: cadetblue;
+                }
+                &.dang-giao{
+                    background-color: chartreuse;
+                }
+                &.da-giao{
+                    background-color: forestgreen;
+                }
+                &.da-huy{
+                    background-color: brown;
+                }
+            }
+            .cellAction{
+                display: flex;
+                flex-direction: column;
+                span{
+                    width: 100%;
+                    padding: 3px;
+                    background-color: chartreuse;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    text-align: center;
+                    &:hover{
+                        color: white;
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

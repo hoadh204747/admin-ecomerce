@@ -1,0 +1,79 @@
+.brand {
+
+    display: flex;
+    margin: 20px 30px;
+
+    .new-brand {
+        flex: 1;
+        text-align: center;
+
+        .form-input {
+            width: 100%;
+            text-align: center;
+            margin-top: 55px;
+
+            input {
+                box-sizing: border-box;
+                height: 40px;
+                width: 40%;
+                border-radius: 5px;
+                margin: 5px 0 15px;
+                border: 0.5px fuchsia rgba(255, 255, 255, 0.0);
+            }
+        }
+
+        button {
+            padding: 5px;
+            width: 50px;
+            border-radius: 5px;
+            border: 0.5px solid transparent;
+            background-color: chartreuse;
+            cursor: pointer;
+
+            &:hover {
+                background-color: cadetblue;
+            }
+        }
+    }
+
+    .list-brand {
+        flex: 1;
+        margin: auto;
+        padding: 20px;
+
+        .category {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin: 15px;
+
+            li {
+                list-style-type: none;
+                color: #555;
+            }
+
+            .icon {
+                font-size: 30px;
+                font-weight: 600;
+                color: rgb(40, 124, 203);
+                cursor: pointer;
+
+                &:hover {
+                    color: coral;
+                }
+            }
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 30px;
+
+            span {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
